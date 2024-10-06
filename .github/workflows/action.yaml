@@ -1,0 +1,14 @@
+name: "CICD for python"
+
+on:
+    push:
+        branches:
+            - "main"
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out branch
+              uses: actions/checkout@v4 
